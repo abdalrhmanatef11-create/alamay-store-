@@ -13,14 +13,14 @@ export default function App() {
   const vodafoneCashNumber = '01012859717';
 
   const coinsProducts = [
-    { id: 1, name: '100 عمله', price: 70.00, img: 'https://ibb.co/Qt6CTyK' },
-    { id: 2, name: '300 عمله', price: 160.00, img: 'https://ibb.co/Qt6CTyK' },
-    { id: 3, name: '500 عمله', price: 250.00, img: 'https://ibb.co/Qt6CTyK' },
-    { id: 4, name: '1000 عمله', price: 450.00, img: 'https://ibb.co/Qt6CTyK' },
-    { id: 5, name: '1,500 عمله', price: 700.00, img: 'https://ibb.co/Qt6CTyK' },
-    { id: 6, name: '2000 عمله', price: 860.00, img: 'https://ibb.co/Qt6CTyK' },
-    { id: 7, name: '3000 عمله', price: 1200.00, img: 'https://ibb.co/Qt6CTyK' },
-    { id: 8, name: '5000 عمله', price: 1900.00, img: 'https://ibb.co/Qt6CTyK' }
+    { id: 1, name: '100 عمله', price: 70.00 },
+    { id: 2, name: '300 عمله', price: 160.00 },
+    { id: 3, name: '500 عمله', price: 250.00 },
+    { id: 4, name: '1000 عمله', price: 450.00 },
+    { id: 5, name: '1,500 عمله', price: 700.00 },
+    { id: 6, name: '2000 عمله', price: 860.00 },
+    { id: 7, name: '3000 عمله', price: 1200.00 },
+    { id: 8, name: '5000 عمله', price: 1900.00 }
   ];
 
   const coachesProducts = [
@@ -313,4 +313,5 @@ export default function App() {
           <span style={{ fontSize: '18px' }}>🏠</span> الرئيسية
         </button>
         <button onClick={() => setActiveTab('cart')} style={{ background: 'none', border: 'none', display: 'flex', flexDirection: 'column', alignItems: 'center', cursor: 'pointer', color: activeTab === 'cart' ? '#0f4c81' : '#64748b', fontSize: '11px', position: 'relative' }}>
-          <span style={{ fontSize: '
+          <span style={{ fontSize: '18px' }}>🛒</span> السلة
+          {cart.length > 0 && <span style={{ position: 'absolute', top: '-2px', right: '10px', background: '#ef4444', color: '#fff', borderRadius: '50%', width: '15px', height: '15px', fontSize: '9px', display: 'flex', alig
